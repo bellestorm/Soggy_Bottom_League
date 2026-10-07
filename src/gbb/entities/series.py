@@ -35,3 +35,6 @@ class Series():
         for name, baker_list in teams_dict.items():
             t = Team(name)
             t._add_bakers(baker_list, self.Bakers)
+
+    def export_series():
+        pass

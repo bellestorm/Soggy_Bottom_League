@@ -5,7 +5,11 @@ class Baker():
 
     @property
     def total_points(self):
-        pass
+        return sum(self.weekly_performance)
+
+    def get_week_performance(self, week_num):
+        ix = week_num -1
+        return self.weekly_performance[ix]
 
     def _add_bio(self, bio):
         self.bio = bio
