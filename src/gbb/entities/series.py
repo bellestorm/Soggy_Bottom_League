@@ -1,16 +1,17 @@
-from gbb.entities.baker import Baker
-from gbb.entities.points import Points
-from gbb.entities.week import Week
-from gbb.entities.team import Team
+from .baker import Baker
+from .week import Week
+from .team import Team
 
 class Series():
     def __init__(self, series_num):
         self.series_num = series_num
         self.num_weeks = 10
         self.Bakers = []
-        self.Points = []
         self.Weeks = []
         self.Teams = []
+
+        #pull in points
+        
 
     def _add_bakers(self, list_of_names, dict_of_bios = None):
         for n in list_of_names:
@@ -37,4 +38,7 @@ class Series():
             t._add_bakers(baker_list, self.Bakers)
 
     def export_series():
+        pass
+
+    def import_series():
         pass
