@@ -11,6 +11,7 @@ class Week():
         for Baker, list_points in baker_dict.items():
             performance = 0
             for item in list_points:
+                Baker.accolades.append(item)
                 for label in self.Points:
                     if item == label.label:
                         self.Points[label].append(Baker)

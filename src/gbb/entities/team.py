@@ -15,3 +15,9 @@ class Team():
             if b.name in name_list:
                 self.Bakers.append(b)
                 name_list.remove(b.name)
+
+    def get_weekly_points(self, week_num):
+        total = 0
+        for b in self.Bakers:
+            total += b.get_week_performance(week_num)
+        return total

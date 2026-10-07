@@ -2,6 +2,7 @@ class Baker():
     def __init__(self, name):
         self.name = name
         self.weekly_performance = []
+        self.accolades = []
 
     @property
     def total_points(self):
